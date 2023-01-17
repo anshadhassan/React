@@ -1,0 +1,81 @@
+Theory 1
+--------
+
+● Emmet
+-----
+Emmet is a plugin for text editors that helps to write HTML and CSS faster by using abbreviations and shortcuts. It is available for a wide range of text editors, including popular ones like Sublime Text, Atom, and Visual Studio Code. Emmet can also be used in other applications like Adobe Dreamweaver and JetBrains IDEs. With Emmet, developers can quickly expand abbreviations into full HTML and CSS code, making it a time-saving tool for web development.
+
+● Difference between a Library and Framework?
+----------------------------------------------
+The main difference between a library and a framework is the way they are used in software development.
+
+A library is a collection of pre-written code that can be called upon to perform specific tasks. It is essentially a set of tools that a developer can use to help with specific problems. They are designed to be flexible and can be used in a variety of different ways, usually, the developer will call a library's functions to perform specific tasks.
+
+A framework, on the other hand, is a more opinionated set of code. It provides a specific structure for building applications, and the developer must work within the constraints of that structure. Frameworks typically include a set of conventions and libraries that are used together, and the developer is expected to use them together in a specific way.
+
+In summary, A library is a collection of functions that a developer can use to perform specific tasks, while a framework is a more opinionated set of code that provides a specific structure for building applications.
+
+
+● What is CDN? Why do we use it?
+---------------------------------
+
+CDN stands for Content Delivery Network. It is a system of distributed servers that deliver web pages and other web content to a user based on the geographic locations of the user, the origin of the web page and a content delivery server.
+
+CDN is used to improve the performance and availability of a website by reducing the distance between the website's server and the user. When a user requests a web page, the CDN will redirect the request to the server that is geographically closest to the user. This reduces the time it takes for the web page to load, as the data has to travel a shorter distance.
+
+CDN also helps to improve the availability of a website by caching a copy of the web page on servers that are located in multiple geographic locations. If the primary server goes down, the CDN will redirect the user to a cached copy of the web page on a nearby server. This helps to ensure that the website is always available to users, even in the event of a server failure.
+
+In summary, CDN is a system of distributed servers that deliver web pages and other web content to a user based on their geographic location, it improves the performance and availability of website by reducing the distance between the website's server and the user and caching a copy of the web page on servers that are located in multiple geographic locations.
+
+
+● Why is React known as React?
+--------------------------------
+React is known as React because of its ability to "react" to changes in the user interface (UI) and updates the UI accordingly. React is a JavaScript library for building user interfaces, specifically for building reusable UI components. React's key feature is that it allows developers to build applications that can update and render efficiently in response to changes in the underlying data.
+
+When data changes, React is able to efficiently update the UI without the need to re-render the entire page. This is because React uses a virtual DOM (Document Object Model) that allows it to efficiently update only the parts of the UI that have changed. This approach, known as "reactive programming," allows React to respond quickly to changes in the data and provides a smooth and responsive user experience.
+
+React's name is a reference to this reactive programming approach, as the library "reacts" to changes in the data by updating the UI accordingly, thus the name React.
+
+● What is crossorigin in script tag?
+----------------------------------
+The crossorigin attribute in a script tag is used to specify the CORS (Cross-Origin Resource Sharing) policy for the script file. CORS is a security feature implemented by web browsers that blocks web pages from making requests to a different domain than the one that served the web page.
+
+The crossorigin attribute can have one of two values: anonymous or use-credentials. The anonymous value indicates that the script file is being loaded from a different origin, but no credentials (such as cookies or HTTP authentication) should be sent with the request. The use-credentials value indicates that the script file is being loaded from a different origin and that credentials should be sent with the request.
+
+This attribute is used when you are loading a script file from a different domain. Without this attribute, the browser will block the request and the script won't be loaded. By adding the crossorigin attribute, you are telling the browser that it is okay to load the script file even if it is coming from a different domain.
+
+In summary, The crossorigin attribute in a script tag is used to specify the CORS (Cross-Origin Resource Sharing) policy for the script file, which allows web pages to make requests to a different domain than the one that served the web page, it is used when you are loading a script file from a different domain.
+
+● What is diference between React and ReactDOM
+----------------------------------------------
+React and ReactDOM are both libraries that are developed and maintained by Facebook, but they serve different purposes.
+
+React is a JavaScript library for building user interfaces, specifically for building reusable UI components. It allows developers to build applications that can update and render efficiently in response to changes in the underlying data. React uses a virtual DOM (Document Object Model) that allows it to efficiently update only the parts of the UI that have changed.
+
+ReactDOM, on the other hand, is a library that provides the necessary methods for interacting with the actual DOM (Document Object Model) in the browser. ReactDOM is responsible for rendering React components into the DOM and for updating the DOM when the components are updated. It provides methods for rendering React components into the DOM, unmounting components from the DOM, and updating the DOM when the component's state changes.
+
+In summary, React is a JavaScript library for building user interfaces, it allows developers to build applications that can update and render efficiently in response to changes in the underlying data and ReactDOM is a library that provides the necessary methods for interacting with the actual DOM (Document Object Model) in the browser, it is responsible for rendering React components into the DOM and for updating the DOM when the components are updated.
+
+
+● What is difference between react.development.js and react.production.js files via CDN?
+-----------------------------------------------------------------------------------------
+react.development.js and react.production.js are different versions of the React library that are intended for use in different environments.
+
+react.development.js is the development version of React. It is intended for use during the development phase of a project and includes features such as error reporting and warnings that are helpful for debugging. The development version is also typically larger in file size and may have slower performance compared to the production version.
+
+react.production.js, on the other hand, is the production version of React. It is intended for use in a production environment and has been optimized for performance and size. The production version includes features such as code minification and removal of development-only code. This version is smaller in file size and has better performance compared to the development version.
+
+The choice between the two versions depends on the environment where the React application is running. When developing, it's better to use the development version, as it has more error messages and developer-friendly features. Once the project is ready to be deployed, it's better to use the production version, as it has better performance and smaller file size.
+
+In summary, react.development.js is the development version of React, it is intended for use during the development phase of a project, it includes features such as error reporting and warnings, and is typically larger in file size and may have slower performance. react.production.js is the production version of React, it is intended for use in a production environment and has been optimized for performance and size, it includes features such as code minification and removal of development-only code.
+
+
+● What is async and defer?
+----------------------------
+async and defer are attributes that can be used with the script tag in HTML to specify the loading behavior of a script file.
+
+The async attribute tells the browser to download the script file while the page is still loading and to execute it as soon as it is available. This means that the script file will not block the loading of the page, and the page can continue to load while the script file is being downloaded. However, because the script file is executed as soon as it is available, it may not be executed in the order that it appears in the HTML.
+
+The defer attribute tells the browser to download the script file while the page is still loading but to execute it only after the page has finished loading. This means that the script file will not block the loading of the page, but it will be executed in the order that it appears in the HTML.
+
+In summary, async attribute tells the browser to download the script file while the page is still loading and to execute it as soon as it is available, it may not be executed in the order that it appears in the HTML, defer attribute tells the browser to download the script file while the page is still loading but to execute it only after the page has finished loading and it will be executed in the order that it appears in the HTML.
